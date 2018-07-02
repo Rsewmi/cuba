@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="driver.driverDetails"/>
+      <class name="loginTestNG.login"/>
+      <class name="kiosks.viewKiosks"/>
+      <class name="kiosks.addKiosk"/>
+      <class name="kiosks.updateKiosk"/>
+<!--      <class name="kiosks.deleteKiosk"/> -->
+      <class name="user.viewUser"/>
+      <class name="user.createUser"/>
+      <class name="user.updateUser"/>
+      <class name="Cheques.validateCheque"/>
+<!--      <class name="kioskVideo.addKioskVideo"/> -->
+      <class name="loginTestNG.logOut"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
