@@ -3,16 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="Cheques.userEnteredAmountValidation">
+      <class name="loginTestNG.login">
         <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="amountValidation"/>
+          <include name="beforeSuite" invocation-numbers="0 1 2 3"/>
           <include name="drivers"/>
-          <include name="afterClass"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Cheques.userEnteredAmountValidation -->
+      </class> <!-- loginTestNG.login -->
+      <class name="Cheques.rejectCheque">
+        <methods>
+          <include name="rejectCheques"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="drivers"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Cheques.rejectCheque -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

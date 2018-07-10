@@ -12,8 +12,9 @@
       <class name="user.viewUser"/>
       <class name="user.createUser"/>
       <class name="user.updateUser"/>
-      <class name="Cheques.validateCheque"/> -->
-      <class name="Cheques.userEnteredAmountValidation"/>
+      <class name="Cheques.validateCheque"/> 
+      <class name="Cheques.userEnteredAmountValidation"/>-->
+      <class name="Cheques.rejectCheque"/>
 <!--      <class name="kioskVideo.addKioskVideo"/> -->
       <class name="loginTestNG.logOut"/> 
     </classes>
