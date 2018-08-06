@@ -3,12 +3,38 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="loginTestNG.login">
+      <class name="user.updateUser">
         <methods>
-          <include name="beforeSuite" invocation-numbers="0 1 2 3"/>
+          <include name="beforeMethod"/>
           <include name="drivers"/>
+          <include name="sendKyes"/>
         </methods>
-      </class> <!-- loginTestNG.login -->
+      </class> <!-- user.updateUser -->
+      <class name="user.createUser">
+        <methods>
+          <include name="drivers"/>
+          <include name="sendKeys"/>
+          <include name="openModal"/>
+        </methods>
+      </class> <!-- user.createUser -->
+      <class name="Cheques.validateCheque">
+        <methods>
+          <include name="afterClass"/>
+          <include name="returnTransactionID"/>
+          <include name="beforeMethod"/>
+          <include name="drivers"/>
+          <include name="chequeValidation"/>
+        </methods>
+      </class> <!-- Cheques.validateCheque -->
+      <class name="kiosks.addKiosk">
+        <methods>
+          <include name="row_number"/>
+          <include name="drivers"/>
+          <include name="openModal"/>
+          <include name="printRows"/>
+          <include name="sendKeysColombo"/>
+        </methods>
+      </class> <!-- kiosks.addKiosk -->
       <class name="Cheques.rejectCheque">
         <methods>
           <include name="rejectCheques"/>
@@ -19,6 +45,30 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- Cheques.rejectCheque -->
+      <class name="kiosks.updateKiosk">
+        <methods>
+          <include name="afterTest"/>
+          <include name="numberofKiosk"/>
+          <include name="drivers"/>
+          <include name="editKiosk"/>
+        </methods>
+      </class> <!-- kiosks.updateKiosk -->
+      <class name="Cheques.userEnteredAmountValidation">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="amountValidation"/>
+          <include name="drivers"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Cheques.userEnteredAmountValidation -->
+      <class name="user.viewUser">
+        <methods>
+          <include name="viewUsers"/>
+          <include name="drivers"/>
+        </methods>
+      </class> <!-- user.viewUser -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

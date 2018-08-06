@@ -17,7 +17,7 @@ public class rejectCheque extends driver.driverDetails {
   public void rejectCheques() throws InterruptedException {
 //	  navigate to the 1st cheque
 	  driver.findElement(By.xpath("//table/tbody/tr[1]/td[8]")).click();
-	  Thread.sleep(8000);
+	  Thread.sleep(10000);
 	  
 //	  click invalid button
 	  driver.findElement(By.xpath("//DIV[@class='btn__content'][text()='Invalid']")).click();
@@ -41,7 +41,7 @@ public class rejectCheque extends driver.driverDetails {
   public void afterMethod() throws InterruptedException {
 //	  navigate to invalid cheques 
 	  driver.findElement(By.xpath("(//A[@class='tabs__item'])[2]")).click();
-	  Thread.sleep(3000);
+	  Thread.sleep(6000);
 	  
 //	  get the cheque value
 	  WebElement baseTable = driver.findElement(By.className("table__overflow"));
@@ -53,10 +53,10 @@ public class rejectCheque extends driver.driverDetails {
   @BeforeClass
   public void beforeClass() {
 //	  navigate to pending cheques 
-//	  driver.findElement(By.xpath("(//A[@class='tabs__item'])[1]")).click();
+	  driver.findElement(By.xpath("(//A[@class='tabs__item'])[1]")).click();
 	  
 	  
-	  driver.findElement(By.xpath("//*[@id='app']/div[4]/aside/div[1]/div[5]/a/div[2]")).click();
+//	  driver.findElement(By.xpath("//*[@id='app']/div[4]/aside/div[1]/div[5]/a/div[2]")).click();
   }
 
   @AfterClass

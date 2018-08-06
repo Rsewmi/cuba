@@ -1,0 +1,9 @@
+[0;1;32m●[0m mysql.service - MySQL Community Server
+   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since බ්‍ර 2018-07-12 11:34:34 +0530; 8min ago
+ Main PID: 12677 (mysqld)
+   CGroup: /system.slice/mysql.service
+           └─12677 /usr/sbin/mysqld
+
+ජූලි 12 11:34:31 thinkcube-Aspire-5742 systemd[1]: Starting MySQL Community Server...
+ජූලි 12 11:34:34 thinkcube-Aspire-5742 systemd[1]: Started MySQL Community Server.

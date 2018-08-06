@@ -23,6 +23,8 @@ public class validateCheque extends driver.driverDetails {
 	//  Navigate to cheque page
 		driver.findElement(By.xpath("//*[@id='app']/div[10]/aside/div[1]/div[5]/a/div[2]")).click();
 		System.out.println("before class");
+		
+		
 			  
 	}
 	
@@ -42,7 +44,7 @@ public class validateCheque extends driver.driverDetails {
 		  
 	  driver.findElement(By.xpath("//table/tbody/tr[1]/td[8]")).click();
 	  
-	  Thread.sleep(8000);
+	  Thread.sleep(10000);
 	  
 	  
 	  System.out.println("test ");

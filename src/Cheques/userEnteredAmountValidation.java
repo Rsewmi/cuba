@@ -19,7 +19,7 @@ public class userEnteredAmountValidation extends driver.driverDetails{
   public void amountValidation() throws InterruptedException {
 //	  navigate into first cheque 
 	  driver.findElement(By.xpath("//table/tbody/tr[1]/td[8]")).click();
-	  Thread.sleep(5000);
+	  Thread.sleep(10000);
 	  driver.findElement(By.xpath("//*[@id='app']/div[5]/div/div/div/div[2]/div/div[3]/div[1]/div[2]/div/button[2]")).click();
 	  Thread.sleep(2000);
 	  driver.findElement(By.xpath("//*[@id='app']/div[5]/div/div/div/div[2]/div/div[3]/div[2]/div[2]/div/button[1]")).click();
@@ -47,7 +47,7 @@ public class userEnteredAmountValidation extends driver.driverDetails{
 	  
 //	  get the cheque value
 	  WebElement baseTable = driver.findElement(By.className("table__overflow"));
-	  WebElement cellInfo = baseTable.findElement(By.xpath("//table/tbody/tr[1]/td[5]"));
+	  WebElement cellInfo = baseTable.findElement(By.xpath("//table/tbody/tr[1]/td[4]"));
 	  beforeCellAmount = cellInfo.getText();
 	  System.out.println("Cell Amount: " + beforeCellAmount);
   }
@@ -57,7 +57,7 @@ public class userEnteredAmountValidation extends driver.driverDetails{
 //	  navigate to validated cheques
 	  driver.findElement(By.xpath("(//A[@class='tabs__item'])[1]")).click();
 
-	  Thread.sleep(4000);
+	  Thread.sleep(6000);
 	  
 //	  get the cheque value
 	  WebElement baseTable = driver.findElement(By.className("table__overflow"));
@@ -70,9 +70,9 @@ public class userEnteredAmountValidation extends driver.driverDetails{
   @BeforeClass
   public void beforeClass() {
 	  //navigate to pending cheque   
-//	  driver.findElement(By.xpath("//*[@id='app']/div[14]/main/div/div/div/div[3]/div[1]/div/div/div[2]")).click();
+	  driver.findElement(By.xpath("(//A[@class='tabs__item'])[1]")).click();
 	  
-	  driver.findElement(By.xpath("//*[@id='app']/div[4]/aside/div[1]/div[5]/a/div[2]")).click();
+//	  driver.findElement(By.xpath("//*[@id='app']/div[4]/aside/div[1]/div[5]/a/div[2]")).click();
 	  
 	  
   }
@@ -91,7 +91,6 @@ public class userEnteredAmountValidation extends driver.driverDetails{
 	  
 	  else {
 		  System.out.println("Invalid Validation process");
-		  driver.quit();
 	  }
   }
 

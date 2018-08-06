@@ -11,7 +11,7 @@ public class logOut extends driverDetails {
   public void afterSuite() throws InterruptedException{
 	
 	    Thread.sleep(4000);
-	    driver.findElement(By.xpath("(//DIV[@class='btn__content'])[8]")).click();
+	    driver.findElement(By.xpath("(//DIV[@class='btn__content'])[15]")).click();
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//DIV[@data-v-57dfeb0f=''][text()='Logout']")).click();
 	    driver.close();

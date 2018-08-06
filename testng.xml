@@ -5,15 +5,15 @@
     <classes>
       <class name="driver.driverDetails"/>
       <class name="loginTestNG.login"/>
-<!--      <class name="kiosks.viewKiosks"/>
+      <class name="kiosks.viewKiosks"/>
       <class name="kiosks.addKiosk"/>
       <class name="kiosks.updateKiosk"/>
-      <class name="kiosks.deleteKiosk"/>
+<!--      <class name="kiosks.deleteKiosk"/> -->
       <class name="user.viewUser"/>
       <class name="user.createUser"/>
       <class name="user.updateUser"/>
       <class name="Cheques.validateCheque"/> 
-      <class name="Cheques.userEnteredAmountValidation"/>-->
+      <class name="Cheques.userEnteredAmountValidation"/>
       <class name="Cheques.rejectCheque"/>
 <!--      <class name="kioskVideo.addKioskVideo"/> -->
       <class name="loginTestNG.logOut"/> 
